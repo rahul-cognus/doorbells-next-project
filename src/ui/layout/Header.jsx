@@ -1,11 +1,14 @@
-
-
+import React, { useState } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 
 // Images
+import logo from "@/public/images/logo.svg"; 
 import logoLight from "@/public/images/logo-light.svg"; 
-import { useState } from 'react';
+import blogHeadImg1 from "@/public/images/blog/16by9/small/01.jpg";
+import blogHeadImg2 from "@/public/images/blog/16by9/small/02.jpg"; 
+import blogHeadImg3 from "@/public/images/blog/16by9/small/03.jpg"; 
+
 
 
 const Header = () => {
@@ -114,8 +117,8 @@ const Header = () => {
 		<div className="container">
 			{/* Logo START */}
 			<a className="navbar-brand" href="index-2.html">
-				<Image className="navbar-brand-item light-mode-item" src={logoLight} alt="logo" width={139} height={30} />			
-				<Image className="navbar-brand-item dark-mode-item" src="/public/images/logo-light.svg" alt="logo" width={139} height={30}/>			
+				<Image className="navbar-brand-item light-mode-item" src={logo} alt="logo" width={139} height={30} />			
+				<Image className="navbar-brand-item dark-mode-item" src={logoLight} alt="logo" width={139} height={30}/>			
 			</a>
 			{/* Logo END */}
 
@@ -273,7 +276,7 @@ const Header = () => {
 									<div className="col-sm-6 col-lg-3">
 										<div className="card bg-transparent">
 											{/* Card img */}
-											<Image className="card-img rounded" src="/public/images/blog/16by9/small/01.jpg" alt="Card image" width={261} height={147}/>
+											<Image className="card-img rounded" src={blogHeadImg1} alt="Card image" width={261} height={147}/>
 											<div className="card-body px-0 pt-3">
 												<h6 className="card-title mb-0"><a href="#" className="btn-link text-reset fw-bold">7 common mistakes everyone makes while traveling</a></h6>
 												{/* Card info */}
@@ -291,7 +294,7 @@ const Header = () => {
 									<div className="col-sm-6 col-lg-3">
 										<div className="card bg-transparent">
 											{/* Card img */}
-											<Image className="card-img rounded" src="/public/images/blog/16by9/small/02.jpg" alt="Card image" width={261} height={147}/>
+											<Image className="card-img rounded" src={blogHeadImg2} alt="Card image" width={261} height={147}/>
 											<div className="card-body px-0 pt-3">
 												<h6 className="card-title mb-0"><a href="#" className="btn-link text-reset fw-bold">12 worst types of business accounts you follow on Twitter</a></h6>
 												{/* Card info */}
@@ -309,7 +312,7 @@ const Header = () => {
 									<div className="col-sm-6 col-lg-3">
 										<div className="card bg-transparent">
 											{/* Card img */}
-											<Image className="card-img rounded" src="/public/images/blog/16by9/small/03.jpg" alt="Card image" width={261} height={147}/>
+											<Image className="card-img rounded" src={blogHeadImg3} alt="Card image" width={261} height={147}/>
 											<div className="card-body px-0 pt-3">
 												<h6 className="card-title mb-0"><a href="#" className="btn-link text-reset fw-bold">Skills that you can learn from business</a></h6>
 												{/* Card info */}
